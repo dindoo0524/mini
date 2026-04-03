@@ -6,4 +6,5 @@ export { updateUserStatus } from "./model/mutations";
 export { validateUser, hasErrors } from "./model/validation";
 export type { ValidationErrors } from "./model/validation";
 export { parseUserSearchParams, toURLSearchParams } from "./model/search-params";
-export { fetchUsers, fetchUserById, approveUser, updateUser } from "./api/user-api";
+export type { UserStats } from "./api/user-api";
+export { fetchUsers, fetchUserById, approveUser, updateUser, fetchUserStats } from "./api/user-api";

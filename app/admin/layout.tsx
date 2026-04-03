@@ -1,9 +1,15 @@
 import { QueryProvider } from "@/shared/lib/query-provider";
+import { Toaster } from "@/components/ui/sonner";
 
 export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <QueryProvider>{children}</QueryProvider>;
+  return (
+    <QueryProvider>
+      {children}
+      <Toaster position="top-right" richColors />
+    </QueryProvider>
+  );
 }
